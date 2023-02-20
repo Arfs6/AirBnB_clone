@@ -1,0 +1,95 @@
+.container {
+	color: white;
+	height: 70px;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: row;
+	/* justify-content: flex-start; */
+}
+
+.filters {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: flex-start; */
+	width: 100%;
+	height: 100%;
+}
+
+.filters botton {
+	font-size: 18px;
+	background-color: #FF5A5F;
+	color: #FFFFFF;
+	height: 48px;
+	width: 20%;
+	border-radius: 4px;
+	transition: opacity 0.5s ease-in-out;
+	position: relative;
+	margin-right: 30px;
+}
+
+button:hover {
+	opacity:90%
+}
+
+button-container {
+	text-align: right;
+}
+
+.filters .locations {
+	border-right: 1px solid #DDDDDD;
+	background-color: red;
+	height: 100%;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+}
+
+.filters .amenities {
+	/* background-color: blue; */
+	height: 100%;
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+
+.locations h3,
+.amenities h3 {
+	font-weight: 600;
+}
+
+.locations h4,
+.amenities h4 {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.popover {
+	position: relative;
+	cursor: pointer;
+	height: 20px;
+	overflow: hidden;
+}
+
+.drop-down-content {
+	display: none;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 1px;
+	/* list-style-type: none; */
+	position: absolute;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 3;
+}
+
+.popover:hover .drop-down-content{
+	display: block;
+}
+
+.filters .amenities,
+.filters .locations,
+.popover,
+.drop-down-content {
+	overflow: auto;
+}
